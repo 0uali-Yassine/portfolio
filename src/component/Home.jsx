@@ -14,14 +14,14 @@ function Home() {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-white afacad-flux fs-5" aria-current="page" href="#">Home</a>
+                            <a class="nav-link  afacad-flux fs-5" aria-current="page" href="#">Home</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link text-white afacad-flux fs-5" href="#">About</a>
+                            <a class="nav-link  afacad-flux fs-5" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white afacad-flux fs-5" href='#'>Work</a>
+                            <a class="nav-link  afacad-flux fs-5" href='#'>Work</a>
                         </li>
                     </ul>
                     <div>
@@ -56,10 +56,22 @@ function Home() {
             </div>
         </div>
 
-        <header>
-            <img src={myImage} style={{width:"300px"}} alt="my_image" />
-        </header>
 
+        <header className='container border' style={{height:"400px",position:"relative"}}>
+            <div className='d-flex' style={{position:"absolute",bottom:"-83px"}}>
+                <div className='' style={{width:'380px'}}>
+                    <img src={myImage} className='img-fluid' alt="my_image" />
+                </div>
+                <div>
+                    <h1 className='abril-fatface-regular title-name '  >Hey, <span className='myName'>Yassine</span> here.</h1>
+                    <p className='fs-3 afacad-flux text-dark'>I create stuff sometimes.</p>
+                </div>
+            </div>
+            
+        </header>
+        <div style={{width:"100%",height:"170px",backgroundColor:"black"}}>
+
+        </div>
     </div>
   )
 }

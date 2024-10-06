@@ -11,3 +11,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*fonts*/
+.afacad-flux{
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*fonts*/
+
+/*nav section*/
+
+.bignav{
+  background-color: #294129;
+ 
+}
+
+.img-logo{
+  width: 40px;
+}
+
+.nav-item .nav-link{
+  color: #FFEDD2 !important;
+}
+.nav-item .nav-link:hover{
+  color: black !important;
+}
+
+button.btn{
+  color: white;
+}
+
+.btn-resume{
+  background-color: #f7ad23;
+  color: #294129 !important;
+  border-radius: 20px;
+  padding: 4px 20px !important;
+}
+.btn-resume:hover{
+  background-color: #f7ad23bd;
+  color: #294129 !important;
+
+}
+
+.nav-link-offcanva:hover{
+  font-weight: bold;
+}
+
+/*header*/
+.title-name{
+  color: black !important;
+  font-size: 60px !important;
+}
+.myName{
+  color: #FFEDD2 !important;
+}
+/**/
