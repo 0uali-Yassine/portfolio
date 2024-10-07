@@ -4,7 +4,7 @@ import myImage from "../assets/Blur-face-01.png";
 
 function Home() {
   return (
-    <div className='bignav'>
+    <div id='#home' className='bignav afacad-flux'>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand abril-fatface-regular fs-1" href="#"><img className='img-logo me-3' src={star} alt="" />Yassine Zerouali</a>
@@ -14,14 +14,14 @@ function Home() {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link  afacad-flux fs-5" aria-current="page" href="#">Home</a>
+                            <a class="nav-link  afacad-flux fs-5" aria-current="page" href="/home">Home</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link  afacad-flux fs-5" href="#">About</a>
+                            <a class="nav-link  afacad-flux fs-5" href="/about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  afacad-flux fs-5" href='#'>Work</a>
+                            <a class="nav-link  afacad-flux fs-5" href='/work'>Work</a>
                         </li>
                     </ul>
                     <div>
@@ -57,20 +57,23 @@ function Home() {
         </div>
 
 
-        <header className='container border' style={{height:"400px",position:"relative"}}>
-            <div className='d-flex' style={{position:"absolute",bottom:"-83px"}}>
-                <div className='' style={{width:'380px'}}>
+        <header className='container' style={{height:"350px",position:"relative"}}>
+            <div className='d-flex' style={{position:"absolute",zIndex:"10",bottom:"-83px"}}>
+                <div className='' style={{width:'400px'}}>
                     <img src={myImage} className='img-fluid' alt="my_image" />
                 </div>
                 <div>
-                    <h1 className='abril-fatface-regular title-name '  >Hey, <span className='myName'>Yassine</span> here.</h1>
-                    <p className='fs-3 afacad-flux text-dark'>I create stuff sometimes.</p>
+                    <h1 className='abril-fatface-regular title-name '  >Hey, <span className='myName'>Yassine</span> here.<span className='blinking-cursor'>|</span> </h1>
+                    <p className='fs-3 afacad-flux small_about fs-4'>I create stuff sometimes.</p>
+                    <p className='fs-5'>Front-End Developer specializing in React, with expertise in HTML, CSS, and JavaScript. Focused on building responsive and user-friendly web applications.</p>
                 </div>
             </div>
             
         </header>
-        <div style={{width:"100%",height:"170px",backgroundColor:"black"}}>
-
+        <div className='scrolldown-parent'>
+            <div className='scroll-down rounded-circle' >
+                <p className='m-auto text-center fw-bold'>Scroll Down</p>
+            </div>
         </div>
     </div>
   )
