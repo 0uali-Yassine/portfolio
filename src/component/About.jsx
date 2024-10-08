@@ -4,7 +4,7 @@ function About() {
   return (
     <div id='#about' className='about'>
       <div className='container p-4'>
-        <h1>/About</h1>
+        <h1 className='abril-fatface-regular'>/About</h1>
         <p className='text-center m-auto mb-4 afacad-flux fs-5' style={{width:"70%"}}> <span className='title'>Front-End Developer </span> with a growing foundation in <span className='fw-bold'>React</span>, with strong 
           proficiency in <span className='fw-bold'>HTML</span>, <span className='fw-bold'>CSS</span>, and <span className='fw-bold'>JAVASCRIPT</span>. I am passionate about creating <span className='fw-bold'>responsive, user-friendly</span> web applications 
           and developing scalable solutions to meet evolving business needs. With experience in building dynamic, 

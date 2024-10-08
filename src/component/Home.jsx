@@ -8,6 +8,7 @@ function Home() {
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand abril-fatface-regular fs-1" href="#"><img className='img-logo me-3' src={star} alt="" />Yassine Zerouali</a>
+                <h1 className='text-white abril-fatface-regular'>YZ</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
                 </button>
