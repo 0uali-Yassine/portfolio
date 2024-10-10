@@ -66,6 +66,22 @@ button.btn{
 }
 
 /*header*/
+.blinking-cursor {
+  font-weight: bold;
+  color: #FFEDD2;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+.small_about{
+  color: #f7ad23;
+}
+
 .title-name{
   color: black !important;
   font-size: 60px !important;
@@ -74,3 +90,86 @@ button.btn{
   color: #FFEDD2 !important;
 }
 /**/
+.scrolldown-parent{
+  position:relative !important;
+  width:100% !important;
+  height:170px !important;
+  background-color:black !important;
+}
+.scroll-down{
+  background-color:#f7ad23 !important;
+  position:absolute !important;
+  bottom:-40px !important;
+  left: 46% !important;
+  width:80px !important;
+  height:80px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+/*about section*/
+.about{
+  background-color:#FFEDD2 !important ;
+  
+}
+
+ul li{
+  list-style-type: none;
+  cursor: pointer;
+ 
+}
+ul li svg{
+  color: #294129;
+  
+}
+
+.title{
+  color: #294129;
+  font-weight: bold;
+}
+
+/*work section*/
+
+.work{
+  background-color: #294129;
+  
+}
+.work-title{
+  color: #FFEDD2;
+}
+
+.filter{
+  color: #f7ad23;
+}
+
+.btn{
+  background-color: #f7ad23;
+  color: #294129 !important;
+  font-weight: 500;
+}
+.btn:hover{
+  border: 1px solid #f7ad23;
+  color: #f7ad23 !important;
+}
+.project{
+  margin-top: 90px;
+  opacity: 0;
+  transition: all .2s linear .2s;
+}
+
+.parent-project:hover > .project{
+  margin-top: 0px;
+  opacity: 1;
+}
+
+.icons svg{
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.icons a{
+  color: black;
+}
+.icons svg:hover{
+  color: #294129;
+}
