@@ -3,6 +3,18 @@ import ecommerce2_image from "./image-project/e-commerce-2.png";
 import ecommerce3_image from "./image-project/e-commerce-3.png";
 import chat1_image from "./image-project/chat-app-1.png";
 import chat2_image from "./image-project/chat-app-2.png";
+import dashboard1_image from "./image-project/dashboard-1.png";
+import dashboard2_image from "./image-project/dashboard-2.png";
+import e_learning_platform_image from "./image-project/e-learning.png";
+import kanban from "./image-project/kanban-task-managment.png";
+import blog_page from "./image-project/blogr-landing-page.jpg";
+import e_commerce_product from "./image-project/ecommerce-product-page.jpg";
+import space from "./image-project/space-tourisme.png";
+import sunnyside_agency from "./image-project/sunnyside-agency.jpg";
+import bookmark from "./image-project/bookmark.png";
+import easy_bank from "./image-project/easy-bank.png";
+import manage_landing_page from "./image-project/manage-landing-page.png";
+
 
 
 const projects = [
@@ -62,7 +74,7 @@ const projects = [
         category: "admin-dashboard",
         title: "📊 An admin dashboard app built with React, MUI, Recharts, and React Progress Circle. Monitor and manage data efficiently with intuitive visualizations and responsive design.",
         technology: ["React", "Material-UI (Mui)", "Recharts", "React Progress Circle", "Tailwind CSS", "Context API"],
-        image: "./image-project/dashboard-2.png",
+        image: dashboard1_image,
         github: "https://github.com/0uali-Yassine/admin-dashboard-app",
         landing_page: true,
     },
@@ -72,7 +84,7 @@ const projects = [
         category: "admin-dashboard",
         title: "📊 An admin dashboard app built with React Recharts, and React Router Dom. Monitor and manage data efficiently with intuitive visualizations and responsive design.",
         technology: ["React", "React-Router-Dom", "Recharts", "Tailwind CSS", "Context API", "JS"],
-        image: "./image-project/dashboard-1.png",
+        image: dashboard2_image,
         github: "https://github.com/0uali-Yassine/admin-dashboard-v1-app",
         landing_page: true,
     },
@@ -82,7 +94,7 @@ const projects = [
         category: "e-learning",
         title: "An interactive platform for learning front-end development: HTML, CSS, JavaScript, and React. 🖥️ Features live coding, responsive layouts, and a chatbot for support. 🚀",
         technology: ["React", "React-Router-Dom", "Firebase", "Auth", "Tailwind CSS", "Context API", "JS"],
-        image: "./image-project/e-learning.png",
+        image: e_learning_platform_image ,
         github: "https://github.com/0uali-Yassine/E-learning-platform",
         landing_page: true,
     },
@@ -92,7 +104,7 @@ const projects = [
         category: "kanban-task",
         title: "📋 Manage tasks effortlessly across boards with this React-based Kanban Board app. Add, delete, and complete tasks with ease. Dark mode and drag-and-drop functionality included!",
         technology: ["React", "React-Router-Dom", "Firebase", "Auth", "Tailwind CSS", "Context API", "JS"],
-        image: "./image-project/kanban-task-managment.png",
+        image: kanban,
         github: "https://github.com/0uali-Yassine/Kanban-Task-management-app",
         landing_page: true,
     },
@@ -103,7 +115,7 @@ const projects = [
         category: "landing-page",
         title: "✨ Converted Figma designs into responsive, modern landing pages with clean UI/UX for a seamless user experience. 📱💻",
         technology: ["HTML", "CSS", "JS", "Bootstrap"],
-        image: "./image-project/blogr-landing-page.jpg",
+        image: blog_page,
         github: "https://github.com/0uali-Yassine/Blogr-landing-page",
         landing_page: true,
     },
@@ -113,7 +125,7 @@ const projects = [
         category: "landing-page",
         title: "✨ Converted Figma designs into responsive, modern landing pages with clean UI/UX for a seamless user experience. 📱💻",
         technology: ["HTML", "CSS", "JS", "Tailwind CSS"],
-        image: "./image-project/ecommerce-product-page.jpg",
+        image: e_commerce_product,
         github: "https://github.com/0uali-Yassine/ecommerce-product-page-main",
         landing_page: true,
     },
@@ -123,7 +135,7 @@ const projects = [
         category: "landing-page",
         title: "✨ Converted Figma designs into responsive, modern landing pages with clean UI/UX for a seamless user experience. 📱💻",
         technology: ["HTML", "JS", "Tailwind CSS"],
-        image: "./image-project/space-tourisme.png",
+        image: space,
         github: "https://github.com/0uali-Yassine/space-tourism-website-main",
         landing_page: true,
     },
@@ -133,7 +145,7 @@ const projects = [
         category: "landing-page",
         title: "✨ Converted Figma designs into responsive, modern landing pages with clean UI/UX for a seamless user experience. 📱💻",
         technology: ["HTML", "JS", "Tailwind CSS"],
-        image: "./image-project/sunnyside-agency.jpg",
+        image: sunnyside_agency,
         github: "https://github.com/0uali-Yassine/Sunnyside-agency-landing-page",
         landing_page: true,
     },
@@ -143,7 +155,7 @@ const projects = [
         category: "landing-page",
         title: "✨ Converted Figma designs into responsive, modern landing pages with clean UI/UX for a seamless user experience. 📱💻",
         technology: ["HTML", "JS", "Tailwind CSS"],
-        image: "./image-project/bookmark.png",
+        image: bookmark,
         github: "https://github.com/0uali-Yassine/Sunnyside-agency-landing-page",
         landing_page: true,
     },
@@ -153,7 +165,7 @@ const projects = [
         category: "landing-page",
         title: "✨ Converted Figma designs into responsive, modern landing pages with clean UI/UX for a seamless user experience. 📱💻",
         technology: ["HTML", "JS", "Bootstrap"],
-        image: "./image-project/easy-bank.png",
+        image: easy_bank,
         github: "https://github.com/0uali-Yassine/easybank-landing-page-master",
         landing_page: true,
     },
@@ -163,7 +175,7 @@ const projects = [
         category: "landing-page",
         title: "✨ Converted Figma designs into responsive, modern landing pages with clean UI/UX for a seamless user experience. 📱💻",
         technology: ["HTML", "JS", "Bootstrap"],
-        image: "./image-project/manage-landing-page.jpg",
+        image: manage_landing_page,
         github: "https://github.com/0uali-Yassine/manage-landing-page",
         landing_page: true,
     },

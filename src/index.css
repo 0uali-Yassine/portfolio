@@ -173,3 +173,47 @@ ul li svg{
 .icons svg:hover{
   color: #294129;
 }
+
+
+/**loading section/
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  -webkit-mask:linear-gradient(0deg,#000 55%,#0000 0) bottom/100% 18.18%;
+  background:
+   linear-gradient(#f7ad23 0 0) bottom/100% 0% no-repeat
+   #FFEDD2;
+  animation: l8 2s infinite steps(7);
+}
+@keyframes l8 {
+    100% {background-size:100% 115%}
+}
+
+/* HTML: <div class="loader"></div> */
+.loader2 {
+  width: fit-content;
+  font-size: 90px;
+  margin: auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: 1px #000;
+  --l:#0000 45%,#f7ad23 0 55%,#0000 0;
+  --g:0/300% 100% no-repeat text;
+  background: 
+    linear-gradient(-60deg,var(--l)) var(--g),
+    linear-gradient( 60deg,var(--l)) var(--g);
+  animation: l7 4s linear infinite;
+}
+.loader2:before {
+  content: "YZ";
+}
+@keyframes l7 {
+  0%  {background-position: 100%,0   }
+  50% {background-position: 0   ,0   }
+  to  {background-position: 0   ,100%}
+}
