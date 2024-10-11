@@ -1,8 +1,7 @@
 import React from 'react';
 
-function Work({Data,setCategory}) {
-  console.log('zfdzf')
-  console.log(Data);
+function Work({Data,setCategory,loading}) {
+ 
   return (
     <div className='work py-3 container-fluid'>
       <div className="container p-4">
@@ -19,15 +18,16 @@ function Work({Data,setCategory}) {
         </div>
       </div>
 
-      <div className='row gap-3 m-auto justify-content-center border'>
+      
+      <div className='row gap-3 mt-4 m-auto justify-content-center'>
         
             {
              
-             Data?.map( project =>{
+              loading ? <div class="loader"></div> : Data?.map( project =>{
                const {id,name,title,image,technology,github} = project;
                console.log(image);
                  
-                 return   <div className="parent-project col-3 p-0 border rounded" style={{position:'relative',width:'250px',height:'260px',overflow:'hidden'}}>
+                 return   <div className="parent-project col-3 p-0 shadow-lg rounded" style={{border:"1px solid #f7ad23",position:'relative',width:'250px',height:'260px',cursor:"pointer",overflow:'hidden'}}>
                               <div>
                               <img className='' src={image} alt="" style={{position:"absolute",zIndex:"1",top:'0px',bottom:"0px",height:"100%"}} />
 
