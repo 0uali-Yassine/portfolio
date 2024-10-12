@@ -2,6 +2,7 @@ import React from 'react';
 import star from "../assets/Orange start.png";
 import myImage from "../assets/Blur-face-01.png";
 
+
 function Home() {
   return (
     <div id='#home' className='bignav afacad-flux'>
@@ -25,7 +26,10 @@ function Home() {
                         </li>
                     </ul>
                     <div>
-                        <button className='btn btn-resume afacad-flux fs-5'>Resume</button>
+                        <a href="/resume1.pdf" download="yassineZerouali_resume.pdf">
+                            <button className='btn btn-resume afacad-flux fs-5'>Resume</button>
+
+                        </a>
                     </div>
                 </div>
             </div>
@@ -58,7 +62,7 @@ function Home() {
 
 
         <header className='container' style={{height:"350px",position:"relative"}}>
-            <div className='d-flex' style={{position:"absolute",zIndex:"10",bottom:"-83px"}}>
+            <div className='d-flex flex-column flex-md-row' style={{position:"absolute",zIndex:"10",bottom:"-83px"}}>
                 <div className='' style={{width:'400px'}}>
                     <img src={myImage} className='img-fluid' alt="my_image" />
                 </div>
