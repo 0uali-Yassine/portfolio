@@ -39,7 +39,7 @@ function App() {
         setLoading(false);
 
         setData(data.filter(flt => flt.category === "chat-app"));
-       },1000)
+       },1500)
        break;
       case "admin-dashboard":
         setTimeout(()=>{
@@ -53,7 +53,7 @@ function App() {
           setLoading(false);
 
            setData(data.filter(flt => flt.category === "e-learning"));
-        },1000);
+        },1500);
         break;
       case "kanban-task":
         setTimeout(()=>{
@@ -66,7 +66,7 @@ function App() {
         setTimeout(()=>{
           setLoading(false);
           setData(data.filter(flt => flt.landing_page));
-        },1000);
+        },1500);
         break;
       
     }
