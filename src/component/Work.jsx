@@ -6,15 +6,15 @@ function Work({Data,setCategory,loading}) {
     <div className='work py-3 container-fluid'>
       <div className="container p-4">
         <h1 className='work-title abril-fatface-regular'>/Work</h1>
-        <div className='d-flex gap-2 mt-5 align-items-center'>
+        <div className='row d-flex gap-2 mt-5 align-items-center justify-content-center'>
           <h5 className='filter'>Filter:</h5>
-          <button className='btn' onClick={()=> setCategory("all")}>All</button>
-          <button className='btn' onClick={()=> setCategory("e-commerce")}>E-commerce(3)</button>
-          <button className='btn' onClick={()=> setCategory("chat-app")}>Chat App(2)</button>
-          <button className='btn' onClick={()=> setCategory("e-learning")}>E-learning Platform</button>
-          <button className='btn' onClick={()=> setCategory("admin-dashboard")}>Dashboard(2)</button>
-          <button className='btn' onClick={()=> setCategory("kanban-task")}>Kanban Task Managment</button>
-          <button className='btn' onClick={()=> setCategory("landing-page")}>Landing Page(14)</button>
+          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("all")}>All</button>
+          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("e-commerce")}>E-commerce(3)</button>
+          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("chat-app")}>Chat App(2)</button>
+          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("e-learning")}>E-learning Platform</button>
+          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("admin-dashboard")}>Dashboard(2)</button>
+          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("kanban-task")}>Kanban Task Managment</button>
+          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("landing-page")}>Landing Page(14)</button>
         </div>
       </div>
 

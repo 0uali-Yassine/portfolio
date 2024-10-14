@@ -62,11 +62,11 @@ function Home() {
 
 
         <header className='container' style={{height:"350px",position:"relative"}}>
-            <div className='d-flex flex-column flex-md-row' style={{position:"absolute",zIndex:"10",bottom:"-83px"}}>
-                <div className='' style={{width:'400px'}}>
+            <div className='row flex-column flex-md-row justify-content-center align-items-center position-relative top-0 position-md-absolute bottom-md-50 z-3'>
+                <div className='col-12 col-md-4 d-none d-lg-block' style={{width:'400px'}}>
                     <img src={myImage} className='img-fluid' alt="my_image" />
                 </div>
-                <div>
+                <div className='col-12 col-md-6 text-md-center text-lg-start mt-5 mt-md-0'>
                     <h1 className='abril-fatface-regular title-name '  >Hey, <span className='myName'>Yassine</span> here.<span className='blinking-cursor'>|</span> </h1>
                     <p className='fs-3 afacad-flux small_about fs-4'>I create stuff sometimes.</p>
                     <p className='fs-5'>Front-End Developer specializing in React, with expertise in HTML, CSS, and JavaScript. Focused on building responsive and user-friendly web applications.</p>
