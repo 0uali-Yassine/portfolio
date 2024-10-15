@@ -12,6 +12,7 @@ function App() {
   const [Data,setData] = useState(data);
   const [category,setCategory] = useState('all');
   const [loading,setLoading] = useState(false);
+  const [toTop,setToTop] = useState(false);
 
 
   
@@ -85,18 +86,43 @@ function App() {
     },4000)
   },[])
 
+
+  useEffect(()=>{
+
+    const sizeHight = ()=>{
+      if(window.scrollY > 400){
+
+        setToTop(true);
+      }else{
+        setToTop(false);
+
+      }
+    } 
+    
+    window.addEventListener('scroll',sizeHight)
+
+    return ()=> window.removeEventListener('scroll',sizeHight);
+  },[])
+
+  const scrollToTop = ()=>{
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+
   return (
     <div>
 
       {
         bigLoading ? <div style={{width:'100%',height:'100vh',backgroundColor:'#294129',display:'flex',justifyContent:'center',alignItems:'center'}}>
           <div class="loader2 abril-fatface-regular"></div>
-        </div> : <>
-                <Home/>
-                <About/>
-                <Work setCategory={setCategory} Data={Data} loading={loading}/>
-                <Footer/>
-        </>
+        </div> : <div className="position-relative">
+                  <Home/>
+                  <About/>
+                  <Work setCategory={setCategory} Data={Data} loading={loading}/>
+                 {
+                  toTop &&  <div onClick={scrollToTop} className="d-flex justify-content-center align-items-center fw-bold fs-4  rounded-pill" style={{position:"fixed",cursor:'pointer',right:'28px',bottom:'101px',zIndex:"10",width:'50px',height:'50px',backgroundColor:'black',color:'white'}}>↑</div>
+                 }
+                  <Footer/>
+                </div>
       }
       
     </div>
