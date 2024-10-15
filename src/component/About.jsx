@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div id='#about' className='about'>
+    <div id='about' className='about'>
       <div className='container p-4'>
         <h1 className='abril-fatface-regular'>/About</h1>
         <p className='text-center m-auto mb-4 afacad-flux fs-5 w-100 w-md-75' > <span className='title'>Front-End Developer </span> with a growing foundation in <span className='fw-bold'>React</span>, with strong 
@@ -10,7 +10,6 @@ function About() {
           and developing scalable solutions to meet evolving business needs. With experience in building dynamic, 
           performance-optimized interfaces, 
           I aim to deliver high-quality code and seamless user experiences. 
-          nobis ut commodi tenetur minima?
         </p>
         <p className='afacad-flux fs-5'>Here are some technologies I have been working with:</p>
         <div className='d-flex'>

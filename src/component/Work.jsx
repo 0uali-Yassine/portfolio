@@ -3,18 +3,18 @@ import React from 'react';
 function Work({Data,setCategory,loading}) {
  
   return (
-    <div className='work py-3 container-fluid'>
+    <div id="work" className='work py-3 container-fluid'>
       <div className="container p-4">
         <h1 className='work-title abril-fatface-regular'>/Work</h1>
         <div className='row d-flex gap-2 mt-5 align-items-center justify-content-center'>
           <h5 className='filter'>Filter:</h5>
-          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("all")}>All</button>
-          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("e-commerce")}>E-commerce(3)</button>
-          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("chat-app")}>Chat App(2)</button>
-          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("e-learning")}>E-learning Platform</button>
-          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("admin-dashboard")}>Dashboard(2)</button>
-          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("kanban-task")}>Kanban Task Managment</button>
-          <button className='btn col-2 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("landing-page")}>Landing Page(14)</button>
+          <button className='btn col-12 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("all")}>All</button>
+          <button className='btn col-12 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("e-commerce")}>E-commerce(3)</button>
+          <button className='btn col-12 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("chat-app")}>Chat App(2)</button>
+          <button className='btn col-12 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("e-learning")}>E-learning Platform</button>
+          <button className='btn col-12 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("admin-dashboard")}>Dashboard(2)</button>
+          <button className='btn col-12 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("kanban-task")}>Task Managment</button>
+          <button className='btn col-12 col-lg-2 col-md-3 col-sm-4' onClick={()=> setCategory("landing-page")}>Landing Page(14)</button>
         </div>
       </div>
 
@@ -25,7 +25,6 @@ function Work({Data,setCategory,loading}) {
              
               loading ? <div class="loader"></div> : Data?.map( project =>{
                const {id,name,title,image,technology,github} = project;
-               console.log(image);
                  
                  return   <div className="parent-project col-3 p-0 shadow-lg rounded" style={{border:"1px solid #f7ad23",position:'relative',width:'250px',height:'260px',cursor:"pointer",overflow:'hidden'}}>
                               <div>
